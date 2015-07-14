@@ -55,6 +55,7 @@ declare module "yargs" {
 			usage(options?: { [key: string]: Options }): Argv;
 
 			command(command: string, description: string): Argv;
+			command(command: string, description: string, fn: (yargs: Argv) => any): Argv;
 
 			example(command: string, description: string): Argv;
 
