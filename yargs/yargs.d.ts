@@ -16,7 +16,7 @@ declare module "yargs" {
 			alias(aliases: { [shortName: string]: string[] }): Argv;
 
 			default(key: string, value: any): Argv;
-			default(defaults: { [key: string]: any}): Argv;
+			default(defaults: { [key: string]: any }): Argv;
 
 			demand(key: string, msg: string): Argv;
 			demand(key: string, required?: boolean): Argv;
