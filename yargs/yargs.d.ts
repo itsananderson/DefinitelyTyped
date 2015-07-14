@@ -24,6 +24,7 @@ declare module "yargs" {
 			demand(keys: string[], required?: boolean): Argv;
 			demand(positionals: number, required?: boolean): Argv;
 			demand(positionals: number, msg: string): Argv;
+			demand(positionals: number, max?: number, msg?: string): Argv;
 
 			require(key: string, msg: string): Argv;
 			require(key: string, required: boolean): Argv;
